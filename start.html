@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Alex Blog</title>
+</head>
+
+<body>
+
+    <header><!--ARTICOLO cioè titolo, testo e immagini in fondo-->
+        <h1>Il mio primo blog</h1>
+    </header>
+
+    <main>
+        <section><!--post del blog-->
+        <article>
+            <p>Ciao! Sono Alessandra e questo è il mio Blog! <br />
+                Io vivo e lavoro a Roma in un <strong>dipartimento IT</strong>.<br />
+            </p>
+                <figure>
+                    <img width="300" height="200"
+                    src="laptop.png" alt="Laptop sul mio desk">
+                    <figcaption>Eccomi mentre lavoro da casa...</figcaption>
+                </figure>
+        </article> 
+        <article>
+            <fieldset>
+                <legend><h3>Annuncio!</h3></legend>
+            <!--<h3>Annuncio!</h3>-->
+            <p>Sto cercando una baby sitter part time per mia figlia di 11 anni. Deve avere le seguenti caratteristiche...</p>
+        </fieldset>
+        </article>   
+        <!--<hr>  -->
+    </section>
+    <section><!--contiene form di sottoscrizione composto da campo obbligatorio inserimeto mail e pulsante di invio-->
+        <form action="/Esercizi/HTML/1/listaindi.html" method="post">
+            <div> 
+            <p>Per essere contattati inviatemi 
+                il vostro indirizzo e-mail nel <strong>box E-mail</strong> di sotto riportato.            </p>
+            <figure>
+                <img width="300" height="200"
+                src="hands.png" alt="Laptop sul mio desk">
+                <!--<figcaption> DIDASCALIA DA AGGIUNGERE</figcaption>-->
+            </figure>
+        </div>
+        <div>      
+        <label for="mail">
+                <span>Il tuo indirizzo <strong>e-mail:</strong></span>
+                <!--campo input-->
+            <input type="email" id="mail" nane="usermail">
+            <!--pulsante invio-->
+            <button type="submit">Invio</button>            
+        </label>  
+        </div>
+        </form>
+    <hr> 
+    </section>
+    </main>    
+    <footer>
+        <div>
+            <p>Questo è un footer di pagina vuoto</p>
+        </div>
+        <!--vuoto-->
+    </footer>     
+    
+</body>
+
+</html>
