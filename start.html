@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML ese 7</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body> 
+	<!--FORM di anagrafica--> 
+	<form action="" method="post">
+        <h1>Form per inserimento dati anagrafici</h1>
+  	<!--Email e pwd-->  
+	  <div>
+		<br/>
+		<hr/>
+            <h3>E-mail</h3>
+			<label for="E-mail"> 
+				<span>Inserisci qui il tuo indirizzo e-mail</span><br>
+               <input type="email" id="E-mail">
+			</label>
+			
+			<h3>Password</h3>
+			<label for="pwd"> 
+				<span>Inserisci qui la tua password</span><br>
+               <input type="password" id="pwd">
+			</label>
+						
+        </div>
+    <!--nome cognome e data di nascita-->   
+		<div>
+		<br/>
+		<hr/>
+			<h3>Nome e data di nascita</h3>
+				<label for="nome"> 
+					<span>Inserisci qui il tuo nome e cognome</span>
+				</label>
+				<input type="text" id="nome" name="nomecognome" size="60">
+				<br/>
+				<br/>
+				<label for="dt"> 
+					<span>Inserisci qui la tua data di nascita</span>
+					<input type="date" id="dt" name="dtnascita" >
+				</label>
+					
+		</div>
+	<!--numero di teefono-->  
+	<div>
+		<br/>
+		<hr/>
+            <h3>Numero di telefono</h3>
+              <label for="numtel"> 
+                  <span>Inserici qui il tuo numero telefonico</span>
+              </label>
+			  <input type="tel" id="numtel" name="numtelefonico"> 
+            
+               </div>
+
+<!-- Selettore con scelta di un piano di abbonamento.
+   	- Un piano free
+   	- Un gruppo di massimo 3 piani con prezzo crescente -->
+	   <div>
+		<br/>
+		<hr/>
+	<h3>Scelta del piano abbonamento</h3>
+	<label for="selpiano"> <span>Seleziona una dei piani di abbonamento...</span> 
+           
+    </label>
+	<br/>
+	<select id="selpiano">
+		<option value="free">Piano free</option>
+		<option value="gruppo">Piano gruppo - max 3 piani con prezzo crescente</option>
+	</select>
+</div>
+ <!--radio botton per scegliere se aggiungere o meno i vantaggi PRO--> 
+ <br/>
+ <div>
+	<label for="V-PRO"> <span>...e seleziona se vuoi aggiungere i vantaggi PRO</span> 
+		<input type="radio" id="V-PRO" name="Vantaggi_PRO" value="Vantaggi">
+	</label>
+ </div>
+ <!--Campi per inserimento carta di scredito
+- Numero carta
+   - CVC
+   - Scadenza
+-->
+<div>
+	<br/>
+	<hr/>
+	<h3>Metodo pagamento</h3>
+	<label for="cc"> <span>Indica il numero della tua carta di credito</span> 
+		<input type="text" id="cc" name="cartacredito" size="16" maxlength="16" 
+		pattern="[0-9]">
+	</label>
+	<br/>
+	<label for="cvc"> <span>Indica il numero cvc della tua carta di credito</span> 
+		<input type="text" id="cvc" name="cvc_cc" size="3" maxlength="3" 
+		pattern="[0-9]">
+	</label>
+	<br/>
+	<label for="dtsc"> <span>Indica la scadenza della tua carta di credito</span> 
+		<input type="month" id="dtsc" name="cvc_cc">
+	</label>
+</div>
+ <!--Indirizzo fatturazione-->
+<div>
+	<br/>
+	<hr/>
+	<h3>Indirizzo di fatturazione</h3>
+	<label for="indi"> <span>Indica il tuo indirizzo per la fatturazione</span> 
+		<input type="text" id="indi" name="indirizzo_fat" maxlength="100">
+	</label>
+	<br/>
+	<br/>
+	<br/>
+	
+</div>
+
+</form>
+
+</body>
+
+</html>
