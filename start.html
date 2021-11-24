@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML ese 6</title>
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <h1>Esercizio 6</h1>
+  <!--pulsante disabilitato-->  
+        <div>
+            <h3>Un pulsante disabilitato</h3>
+               <input type="button" value="Sono disabilitato!" disabled>
+           <hr/>
+
+        </div>
+    <!--input numerico 0-100 step 2-->   
+        <div>
+            <h3>Un input numerico, con relativa label, nel range 0-100 e con step di 2, 
+            focus all'apertura della pagina</h3>
+              <label for="campoinput"> 
+                  <span><i>Input numeroco step 2</i></span>
+              </label>
+              <input type="number" id="campoinput" name="campoin" min="0" max="100" step="2" autofocus>
+              <hr/>
+        </div>
+  <!--checkbox già selezionato-->         
+        <div>
+            <h3>Una checkbox con relativa label, già selezionata all'apertura della pagina</h3>
+            <label for="cb"> 
+                <span><i>Checkbox selezionato</i></span>
+            </label>
+            <input type="checkbox" id="cb" name="checkboxsel" checked>
+            <hr/>
+        </div>
+<!--date con una proprietà custom range--> 
+        <div>
+            <h3>Un input per date con una proprietà custom</h3>
+            <label for="dt"> 
+                <span><i>Data in range 2010-2060</i></span>
+            </label>
+            <input type="date" id="dt" name="data" min="2010-01-01" max="2060-01-01">
+            
+        </div>
+
+    </form>
+</body>
+
+</html>
