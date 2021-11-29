@@ -1,0 +1,46 @@
+html {
+    background-color: rgba(172, 255, 47, 0.253);
+  }
+cite, sup, sub {
+    color: rgb(55, 0, 128);
+    width: 500px;
+    border: 3px solid red;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+p {
+    color: green;
+    width: 500px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: violet;
+    border: 3px solid black;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;
+  }
+  main {
+    text-align: center;
+    color: rgb(190, 131, 190);
+    background-color: rgba(255, 166, 0, 0.397);
+    width: 600px;
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 50px 30px 50px 30px;
+    
+  }
+  img {
+    display: block;
+    margin: 100px 300px;
+  }
+  .center {
+    text-align: center;
+    color: red;
+  }
+  
+    
