@@ -1,0 +1,41 @@
+body {
+	font-family: monospace;
+}
+/*  ID checkbox nascosto in alto */
+#expand-toggle {
+	 display: none; 
+	 /* display: inline; prova per renderlo visibile */
+}
+/* classe delle righe della tabella che vengono mostrate o nascoste */
+.expandable {
+	visibility: collapse;
+	background: gray;
+	color: white;
+}
+/* ID-Stile del tasto/label visibile sotto rosa 'Mostra righe' che appare a righe nascoste */
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+} 
+/* Mostra righe quando è selezionato agisce su classe expandable */
+#expand-toggle:checked ~ * .expandable {
+	visibility: visible;
+	
+  }
+  
+  /* Style del button quando è selezionato */
+  #expand-toggle:checked ~ #expand-btn {
+	background-color: #88ff88;
+	/*content:var();*/
+	
+		  }
+/* manca cambio label 
+#expand-toggle:checked label {
+	content: "Nascondi righe";
+  }
+  */
