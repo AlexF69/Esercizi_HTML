@@ -1,0 +1,82 @@
+.web-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: whitesmoke;
+    }
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column; */
+    align-items: center;
+    background-color: greenyellow;
+    border: solid;
+    border-color: black;
+    margin: 5px;
+    width: 200px;
+    /* flex: 1 100%;  */
+    height: 800px;
+    /* height: auto; */
+    order: 1;
+}
+
+    .logo-img {
+            width: 200px;
+        height: 100px;
+        margin-right: 0px;
+        order: 1;
+        
+        }
+.con-link {
+    display: flex;
+    flex-direction: row;
+    display: list-item;
+    background-color: yellow;
+    border: solid;
+    border-color: green;
+    width: 200px;
+    height: 30px;
+    /* justify-content: space-around; */
+    order: 2;
+           
+}
+a { color: #2b2b2b; 
+    transition: 0.3s; }
+a:hover { color: #2b2bb2; 
+    }
+
+.mio-avatar{
+    /* border: solid; */
+    /* border-color: black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+    /* align-items: flex-end;  */
+    /* justify-content: flex-end; */
+    /* display: list-item; */
+      /* width: 200px; */
+    /* height: 40px; */
+    /* align-self: flex-end; */
+    order: 4;
+           
+}
+
+picture {
+    display: flex;
+    border: solid;
+    border-color:  black;
+    border-radius: 5px;
+    flex-grow: 1;
+
+}
+
+.vuota {
+    background: white;
+    width: 200px;
+    height: 400px;
+    order: 3;
+}
