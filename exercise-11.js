@@ -1,10 +1,6 @@
-// trasformazione di sintassi normale function in short come segue
-//let myFunction = (a, b) // parametri della funzione,si omette la parola function
-//=> // ritorna il risultato
-//a * b; // operazioni che fa nella funzione fra parentesi graffe
-/////
 //# Arrow functions - Exercise 1
 //Trasformare le due variabili funzione (`sum` e `log`) in due arrow functions
+// trasformazione di sintassi normale function in short come segue
 //const sum = function (a, b) {
 //  return a + b;
 //};
@@ -16,10 +12,10 @@ sum = (a, b) => a + b;
 //  console.log(value);
 //};
 // diventa
-const log = (value) => {
-  console.log(value);
-};
-// oppure
-//log = value => console.log(value);
-// richiama funzione
+//const log = (value) => {
+//  console.log(value);
+//};
+// oppure ancora più breve
+const log = (value) => console.log(value);
+// richiamo funzione
 log(sum(2, 5));
