@@ -21,7 +21,7 @@
 function calculate() {
   // ...
   let risultato = 0;
-
+  // dichiaro le funzioni come proprietà dell'oggetto che ritorno
   add = function (num) {
     risultato += num; // al posto di : risultato = risultato + num;
     return this;
@@ -50,3 +50,4 @@ function calculate() {
 const calculator = calculate(); // funzione padre ch restituisce il risultato della funzione padre
 calculator.add(2).add(4).multiply(3).sub(1).sub(3).divide(2).printResult(); // Il risultato sarà: 7
 // funzione figlia contenuta in calculate
+//
