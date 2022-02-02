@@ -15,22 +15,25 @@
 // console.log(factorial(5)); // Fetching from cache for 120
 // ```
 
-////////////////////trovata in rete
-// var f = [];
-// function factorial (n) {
-//   if (n == 0 || n == 1)
-//     return 1;
-//   if (f[n] > 0)
-//     return f[n];
-//   return f[n] = factorial(n-1) * n;
-// }
-
 function memoize(fn) {
-  let cache = {};
-  // ...
-  return fn(x);
+  let cache = {}; // oggetto che contiene proprietà
+  cache.storage = []; // proprietà storage dichiarata come un array di due dimensioni:
+  // num_array e risultato_array, inizializzate in seguito
+  // ritorno funzione passata in parametro fn passando parametro num di cui fare fattoriale
+  return function (num) {
+    // prima di tutto cerco se fattoriale di num già calcolato sulla proprietà storage (array) dell'oggetto cache
+    const result = cache.storage.find((item) => item.num_array === num); // condizione uguaglianza
+    // dove item ritorna tutto l'elemento di storage composto da num_array e risultato_array
+    if (result) return result.risultato_array; // se è vero che result è valorizzato/trovato, lo ritorna e esce
+    // esle non serve perchè esce prima, altrimenti lo calcola con la funzione
+    let risultato = fn(num);
+    // e lo storicizza in array storage, sia num che risultato
+    cache.storage.push({ num_array: num, risultato_array: risultato });
+    return risultato; // ritorna risultato della funzione e esce
+  };
 }
-// funzione fattoriale
+
+// funzione fattoriale dichiarata fuori dalla outer function
 function factorial(x) {
   if (x === 0) {
     return 1;
@@ -38,7 +41,7 @@ function factorial(x) {
 
   return x * factorial(x - 1);
 }
-
+//
 factorial = memoize(factorial);
 console.log(factorial(10));
 console.log(factorial(6));
