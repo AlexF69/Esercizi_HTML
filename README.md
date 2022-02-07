@@ -1,16 +1,2 @@
-# Closure - Exercise 4
-Implementare la funzione `calculate` che restituisce un oggetto che dia la possibilità di eseguire le quattro operazioni matematiche (somma, sottrazione, moltiplicazione e divisione) su uno stesso numero e infine consente di stamparne il risultato.
-
-**TIP**: Per concatenare i metodi basta restituire il riferimento all'oggetto stesso (`$this`)
-
-Esempio:
-```
-calculator
-  .add(2) // 2
-  .add(4) // 6
-  .multiply(3) // 18
-  .sub(1) // 17
-  .sub(3) // 14
-  .divide(2) // 7
-  .printResult();
-```
+# Object Constructor - Exercise 2
+Implementare la funzione `Person` che accetta e assegna due argomenti: `firstName` e `lastName` e definisce il metodo `fullName()`, il quale si occupa di concatenare e restituire il nome completo. Infine, istanziare due oggetti: `john` e `simon` tramite la keyword `new` utilizzando la funzione `Person` e stampare in console il nome completo
