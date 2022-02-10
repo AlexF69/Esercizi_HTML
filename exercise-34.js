@@ -1,4 +1,4 @@
-// # Classes - Exercise 1
+// # Classes - Exercise 1 --> 34
 // Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
 
 // Class definition
@@ -26,6 +26,6 @@ class Person {
     this.cognome = value;
   }
 } // fine classe
-
+// istanzio classe creando oggetto developer
 const developer = new Person("Mario", "Rossi"); //istanzio classe creando oggetto developer
 console.log(`Nome completo ${developer.firstName} ${developer.lastName}`);
