@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Destructuring assignment - Exercise 3
+Utilizzare la destrutturazione per semplificare il controllo sull'età della persona.
