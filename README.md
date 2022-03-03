@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Destructuring assignment - Exercise 2
+Utilizzare la destrutturazione per eseguire l'assegnazione dei valori tramite un'unica linea di codice
