@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# JSON methods - Exercise 2
+Implementare il metodo `fromJson` che accetta un json e istanzia un oggetto di tipo `Person`
