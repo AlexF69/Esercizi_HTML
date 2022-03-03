@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Destructuring assignment - Exercise 1
+Utilizzare la destrutturazione, al posto di una variabile temporanea, per eseguire lo swapping delle variabili
