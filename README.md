@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# JSON methods - Exercise 4
+In questo esercizio occorre filtrare le proprietà dell'oggetto `person` affinché vengono codificate in json solo i valori numerici (vale a dire `id` e `age`).
