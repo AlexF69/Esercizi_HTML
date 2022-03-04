@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Rest parameters and spread syntax - Exercise 1
+La funzione `sum` presenta un elevato numero di parametri in ingresso, come possiamo migliorare il codice affinché eccetti un numero indefinito di valori da sommare?
