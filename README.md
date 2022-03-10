@@ -1,2 +1,2 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Async Management - Exercise 1
+Implementare la funzione `fetchPersonById`, la quale riceve in input un id e restituisce una `Promise` contenente l'oggetto della persona corrispondente a quell'id.
