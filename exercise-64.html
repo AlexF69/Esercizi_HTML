@@ -1,0 +1,37 @@
+<!-- # Browser Storing Data - Exercise 1 -> 64 
+Implementare il codice necessario per:
+* Recuperare il post presente al seguente url: https://jsonplaceholder.typicode.com/posts/1 al click del pulsante "Fetch Post"
+* Salvare il post sul localStorage al click del pulsante "Save Post on LocalStorage" -->
+
+<html>
+  <body>
+    <div id="container">
+      <!-- aggiungo evento on click sui bottoni -->
+      <button type="button" id="fetch-post" onclick="getPost()" >Fetch Post</button>
+      <button type="button" id="save-post" onclick="savePost()">Save Post on LocalStorage</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  
+// Recupero il post con fetch
+let post; //dichiarativa dati da fetch comune alle due funzioni on click
+  function getPost() {
+    
+     fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json()) // prendo il response con metodo json 
+    .then((response) => {
+     // post = response; // valorizzo dati fetchati
+      post = encodeURIComponent(response)
+     })
+    .catch((err) => console.log("Errore in chiamata alla url del post", err)); // gestione errore con console.log
+}
+///
+function savePost() {
+   localStorage.clear(); // cancella il contenuto
+   localStorage.setItem("Post", post); // setting del valore indicando la chiave, valore deve essere sempre una stringa
+  
+ }
+ 
+</script>
