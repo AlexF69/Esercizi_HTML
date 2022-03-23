@@ -1,0 +1,64 @@
+<!-- # Browser Storing Data - Exercise 2 -> 65
+Implementare il codice necessario per:
+* Recuperare il post presente all'interno del LocalStorage (salvato tramite l'esercizio precedente)
+* Visualizzare all'interno dell'elemento `#post-title` il titolo del post recuperato dal LocalStorage -->
+
+<html>
+  <body>
+    <div id="container">
+      <!-- <button type="button" id="fetch-post" onclick="getPostLocalStorage()"> -->
+          <button type="button" id="fetch-post" >
+        Fetch Post from LocalStorage 
+      </button>
+
+      <!-- <h2>Post: <span id="post-title" onclick="visPost()" post ></span></h2> -->
+            <h2>Post: <span id="post-title" ></span></h2>
+    </div>
+  </body>
+</html>
+
+<script>
+  // * Recuperare il post presente all'interno del LocalStorage (salvato tramite l'esercizio precedente)
+  let post; 
+  function getPostLocalStorage() { // funzione per recuperare il post da https e lo metto in LocalStorage
+     fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json()) // prendo il response con metodo json 
+    .then((response) => {
+      post = response; // prendo tutto l'oggetto post
+      localStorage.clear(); // cancella/ripulisce il contenuto storage
+      localStorage.setItem("Post-Title", post.title); // salvo in local storage solo il title
+      //console.log(localStorage)
+    })
+    .catch((err) => console.log("Errore in chiamata alla url del post", err)); // gestione errore con console.log
+}
+// individuo elemento button sul quale associare la function getPostLocalStorage da scatenare all'evento click 
+const buttonFetch = document.getElementById("fetch-post"); 
+// aggiungo la funzione 'getPostLocalStorage' sull'evento 'click' del button in mod che al click vedo in folder application la local storage valorizzata
+buttonFetch.addEventListener("click", getPostLocalStorage); 
+///* Visualizzare all'interno dell'elemento `#post-title` il titolo del post recuperato dal LocalStorage -->
+const spanEl = document.getElementById("post-title"); // individuo elemento span sul quale valorizzare il titolo del post
+spanEl.innerText = JSON.stringify(localStorage); // metto il testo Post Title del local storage nell'elemento span
+
+</script>
+
+© 2022 GitHub, Inc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
