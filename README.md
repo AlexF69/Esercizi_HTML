@@ -1,2 +1,3 @@
-# Classes - Exercise 1
-Definire la classe `Person` che accetta due parametri nel costruttore `firstName` e `lastName`
+# Typescript - Exercise 2 - Typescript
+
+Creare una classe che implementi l'interfaccia dell'esercizio precedente ed esponga un metodo che restituisca il fullName
